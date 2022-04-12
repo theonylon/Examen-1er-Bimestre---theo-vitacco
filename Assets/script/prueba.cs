@@ -42,7 +42,16 @@ public class prueba : MonoBehaviour
         }
 
         
-        if (cantidad_producto1 < 1 && cantidad_producto2 < 1 && cantidad_producto3 < 1)
+        if (cantidad_producto1 < 1 )
+        {
+            Debug.Log(" error, no ingresó una cantidad aceptable ");
+        }
+      else  if (cantidad_producto2 < 1)
+        {
+            Debug.Log(" error, no ingresó una cantidad aceptable ");
+        }
+
+        else if (cantidad_producto3 < 1)
         {
             Debug.Log(" error, no ingresó una cantidad aceptable ");
         }

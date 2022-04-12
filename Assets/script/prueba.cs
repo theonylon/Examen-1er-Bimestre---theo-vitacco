@@ -23,7 +23,15 @@ public class prueba : MonoBehaviour
         int total_productos = cantidad_producto * precio_producto;
         int descontado = total_productos * 20 / 100;
         int descuento = total_productos * 80 / 100;
-        if (precio_producto1 < 1 && precio_producto2 < 1 && precio_producto3 < 1)
+        if (precio_producto1 < 1)
+        {
+            Debug.Log(" error, no tiene un precio aceptable ");
+        }
+      else if (precio_producto2 < 1)
+        {
+            Debug.Log(" error, no tiene un precio aceptable ");
+        }
+        else if (precio_producto3 < 1)
         {
             Debug.Log(" error, no tiene un precio aceptable ");
         }
